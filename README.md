@@ -28,23 +28,22 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Initialize the shift register to a known state (e.g., all zeros).
+
+2.Input a bit serially into the shift register.
+
+3.Shift the contents of the register one position to the right (or left).
+
+4.Output the shifted bit from the last stage of the register.
+
+5.Repeat steps 2-4 for each bit you want to input and shift.
 
 **PROGRAM**
 ## Developed by: A.SHERWIN INFANO
 RegisterNumber: 24010314
 
-module exp11(out,clk,rstn);
-input clk,rstn;
-output reg [3:0]out;
-always @ (posedge clk)
-begin
-   if(!rstn)
-     out<=0;
-   else 
-     out <= out+1;
-end
-endmodule
+![Screenshot (59)](https://github.com/user-attachments/assets/80457551-a4a7-49c8-9445-215750c33d7f)
+
 
 **RTL LOGIC UP COUNTER**
 ![image](https://github.com/user-attachments/assets/faeb9f94-f3d5-412b-99d8-a53c61e98ad9)
